@@ -1,0 +1,14 @@
+main.exe 服务器节点 服务进程
+对应server.ini
+qwe.exe 普通节点，服务进程，用于接受下载文件请求并传输文件
+asd.exe 客户端支持u,d,s上传下载搜索	asd uxxx就是上传xxx文件其他同理
+这两个exe对应client.ini
+	server_ip对应main.exe的ip
+	server_port对应main.exe的端口
+	local_bufsize asd.exe的bufsize
+	server_bufsize qwe.exe的bufsize
+	local_port qwe.exe的port
+main.exe 和 qwe.exe不用有图形界面
+asd.exe需要上传下载和搜索功能只支持当前目录
+***重点，必须在相同字节序机器上运行
+如果需要可以提供linux版本
